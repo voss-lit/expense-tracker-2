@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSE TRACKER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+
+        <div class="con-1">
+        <h1>Expense tracker</h1>
+        <p>Simply track your spending</p>
+        </div>
+        
+    </section>
+
+    <div class="card">
+        <p>total expense</p>
+        <p>KSH 0.00</p>
+        <p>converted currency to Kenya Shillings</p>
+    </div>
+
+    <div class="card-2">
+
+        <div class="card">
+
+        <p>Total transactions</p>
+        <p>0</p>
+
+        </div>
+
+        <!-- <div class="card">
+            <p>categories</p>
+            <p>0</p>
+        </div> -->
+        
+    </div>
+
+    <div class="card">
+         <label for="Homecurrency">Home currency</label>
+
+        <select id="Homecurrency">
+            <option value="KES">Kenya Shillings</option>
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">British Pound</option>
+            <option value="JPY">Japanese Yen</option>
+            <option value="ZAR">South African Rand</option>
+            <option value="RFW">Rwandan Franc</option>
+        </select>
+    </div>
+
+    <div class="form-card">
+
+            <h2>Add an expense</h2>
+            <label for="desc">Deccription</label>
+            <input id="desc" type="text" placeholder="e.g entertainment" >
+       
+        <div class="side">
+
+            <div>
+                <label for="amount">Amount</label>
+                <input id="amount" type="number" placeholder="400">
+            </div>
+
+                 <!-- shows the currency youve spent -->
+            <div>
+                <label for="currency">currency</label>
+                <select name="" id="currency" required>
+                    <option value="KES">KES</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            </div>
+
+        </div>
+
+            <label for="cartegory">Category</label>
+                <select name="" id="category" required>
+                    <option value="Transport">Transport</option>
+                    <option value="Food">Food</option>
+                    <option value="Luxury">Luxury</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Others">Others</option>
+                </select>
+        
+         <button class="btn">+ Add Expense</button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Your expense</h2>
+
+        <label for="filter">Filter by Category</label>
+        <select name="" id="filter">
+            <option value="all">All Cartegories</option>
+            <option value="Transport">Transport</option>
+            <option value="Food">Food</option>
+            <option value="Luxury">Luxury</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Others">Others</option>
+        </select>
+
+        <div id="expenseList">
+            <p>No expense added</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

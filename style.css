@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #334155;
+    line-height: 1.6;
+}
+
+body > section,
+body > .card,
+body > .card-2,
+body > .form-card {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first-con h1 {
+    margin: 0;
+    color: rgb(14, 70, 120);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(15,23,42, 0.06);
+}
+
+.card-2 {
+   display: grid;
+   /* grid-template-columns: 1fr 1fr; */
+   gap: 14px;
+}
+
+.form-card {
+    margin-top: 14px;
+}
+
+.form-card h2 {
+    margin: 0 0 16px;
+    font-size: 20px;
+}
+  
+label {
+    display: block;
+    color: #64748b;
+    font-size: 14px;
+    margin: 13px 0 16px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; gap: 14px;
+    gap: 60px
+}
+
+input, select {
+    width: 100%;
+    padding: 16px;
+    font-size: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+    background: #fff;
+    color: #0f172a;
+}
+
+input:focus, select:focus {
+    outline: 3px solid #2563eb;
+    border-color: transparent;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color:#fff;
+    background: #2563eb;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transition: 3ms;
+}
+
+#expenseList > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+#expenseList button {
+    padding: 8px 12px;
+    color: #b91c1c;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#expenseList button:hover {
+    color: #ffffff;
+    background-color: #dc2626;
+    border-color: #dc2626;
+}
