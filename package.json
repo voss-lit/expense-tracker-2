@@ -1,0 +1,27 @@
+{
+  "name": "expense-track-2",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voss-lit/expense-tracker-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/voss-lit/expense-tracker-2/issues"
+  },
+  "homepage": "https://github.com/voss-lit/expense-tracker-2#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "jest": "^30.5.2"
+  }
+}
