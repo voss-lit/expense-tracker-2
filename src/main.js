@@ -16,13 +16,13 @@ import {
 import { renderApp } from './ui.js';
 
 // 1. Grab all the HTML form elements and inputs we need to interact with
-const formButton = document.querySelector('.btn');          // The "+ Add Expense" button
-const descInput = document.getElementById('desc');          // Description text input
-const amountInput = document.getElementById('amount');      // Amount number input
-const currencySelect = document.getElementById('currency'); // Currency dropdown for the expense
-const categorySelect = document.getElementById('category'); // Category dropdown for the expense
-const homeCurrencySelect = document.getElementById('Homecurrency'); // Main home currency dropdown
-const filterSelect = document.getElementById('filter');     // Filter category dropdown
+const formButton = document.querySelector('.btn');       
+const descInput = document.getElementById('desc');          
+const amountInput = document.getElementById('amount');      
+const currencySelect = document.getElementById('currency'); 
+const categorySelect = document.getElementById('category'); 
+const homeCurrencySelect = document.getElementById('Homecurrency'); 
+const filterSelect = document.getElementById('filter');     
 
 /*
   2. An asynchronous initialization function that runs when the website first loads (app ikuwe ready juu huwa inachelewa)
