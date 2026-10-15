@@ -36,10 +36,10 @@ async function init() {
     setRates(rates);
     
   } catch (error) {
-    // If the internet is down or API fails, show an alert and use fallback 1:1 rates so the app doesn't break (Manze app isitrip)
+    console.error('Could not load live exchange rates:', error);
     alert('Could not load live exchange rates. Defaulting to 1:1 rates.');
     setRates({ KES: 1, USD: 1, EUR: 1, GBP: 1, JPY: 1 });
-  }
+}
 
   // Step C: Draw the app for the very first time (it will show "No expenses found")
   renderApp(state);
