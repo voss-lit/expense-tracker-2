@@ -24,8 +24,8 @@ const categorySelect = document.getElementById('category'); // Category dropdown
 const homeCurrencySelect = document.getElementById('Homecurrency'); // Main home currency dropdown
 const filterSelect = document.getElementById('filter');     // Filter category dropdown
 
-/**
- * 2. An asynchronous initialization function that runs when the website first loads (app ikuwe ready juu huwa inachelewa)
+/*
+  2. An asynchronous initialization function that runs when the website first loads (app ikuwe ready juu huwa inachelewa)
  */
 async function init() {
   try {
