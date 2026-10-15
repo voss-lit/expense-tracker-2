@@ -1,8 +1,8 @@
 // utils.js - This file holds pure math and logic functions. 
 // "Pure" means they take inputs, do calculations, and return results without changing anything outside.
 
-/**
- * Converts an amount from one currency to another using the live exchange rates.
+/*
+  Converts an amount from one currency to another using the live exchange rates.
  */
 export function convertCurrency(amount, fromCurrency, toCurrency, rates) {
   // If rates haven't loaded yet or currencies are missing, just return the original amount safely
@@ -20,8 +20,8 @@ export function convertCurrency(amount, fromCurrency, toCurrency, rates) {
   return Number(convertedAmount.toFixed(2));
 }
 
-/**
- * Calculates the total sum of all expenses combined, converted into the user's home currency.
+/*
+  Calculates the total sum of all expenses combined, converted into the user's home currency.
  */
 export function calculateTotal(expenses, homeCurrency, rates) {
   // Use the .reduce() array method to loop through all expenses and add up their converted values
@@ -33,8 +33,8 @@ export function calculateTotal(expenses, homeCurrency, rates) {
   }, 0); // Start the running sum at 0
 }
 
-/**
- * Filters the list of expenses so the user only sees items matching their selected category.
+/*
+  Filters the list of expenses so the user only sees items matching their selected category.
  */
 export function filterExpenses(expenses, category) {
   // If the user selected 'all' or didn't pick a category, return the full list of expenses

@@ -106,7 +106,7 @@ input:focus, select:focus {
 }
 
 
-#expenseList button {
+/* #expenseList button {
     padding: 8px 12px;
     color: #b91c1c;
     background-color: #fef2f2;
@@ -122,4 +122,4 @@ input:focus, select:focus {
     color: #ffffff;
     background-color: #dc2626;
     border-color: #dc2626;
-}
+} */

@@ -4,7 +4,7 @@
 import { convertCurrency, calculateTotal, filterExpenses } from './utils.js';
 
 // Function to draw or update everything on the screen when data changes
-export function renderApp(state, onDeleteCallback) {
+export function renderApp(state) {
   
   // Kufind the HTML box where the list of expenses will be shown
   const expenseListContainer = document.getElementById('expenseList');
@@ -22,10 +22,14 @@ export function renderApp(state, onDeleteCallback) {
   const total = calculateTotal(state.expenses, state.homeCurrency, state.rates);
 
   // Update the total expense text on the screen with the home currency symbol and rounded total
-  totalExpenseDisplay.textContent = `${state.homeCurrency} ${total.toFixed(2)}`;
+  if (totalExpenseDisplay) {
+    totalExpenseDisplay.textContent = `${state.homeCurrency} ${total.toFixed(2)}`;
+  }
   
   // Update the transaction count card with the total number of items in our array
-  totalTransactionsCount.textContent = state.expenses.length;
+  if (totalTransactionsCount) {
+    totalTransactionsCount.textContent = state.expenses.length;
+  }
 
   // If hakuna expenses to show, display a friendly message inside the box and stop here
   if (visibleExpenses.length === 0) {
@@ -56,16 +60,7 @@ export function renderApp(state, onDeleteCallback) {
         <strong>${expense.description}</strong> (${expense.category})<br>
         <small>${expense.currency} ${expense.amount.toFixed(2)} ➔ ${state.homeCurrency} ${convertedAmount.toFixed(2)}</small>
       </div>
-      <button data-id="${expense.id}" class="delete-btn">Delete</button>
     `;
-
-    // Find the delete button we just created inside this specific expense item
-    const deleteBtn = expenseItem.querySelector('.delete-btn');
-    
-    // Add a click listener to the delete button so it calls our delete function when clicked
-    deleteBtn.addEventListener('click', () => {
-      onDeleteCallback(expense.id);
-    });
 
     // Finally, add this completed expense item into the main expense list box on the webpage
     expenseListContainer.appendChild(expenseItem);
